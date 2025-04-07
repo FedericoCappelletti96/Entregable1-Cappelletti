@@ -22,10 +22,10 @@ while(true){
         alert(a+' ARS son: '+ b)
     }
 const monedas=[ 
-    {moneda:'euro', precio: '2'},
-    {moneda:'dolar', precio: '3'},
-    {moneda:'dolar blue', precio: '4'},
-    {moneda:'real', precio: '5'},
+    {moneda:'euro', precio: '1178,44'},
+    {moneda:'dolar', precio: '1055,75'},
+    {moneda:'dolar blue', precio: '1340'},
+    {moneda:'real', precio: '183,75'},
     {moneda:'ARS', precio: '1'},
 ]
 
