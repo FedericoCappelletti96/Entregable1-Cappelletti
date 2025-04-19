@@ -22,17 +22,17 @@ while(true){
         alert(a+' ARS son: '+ b)
     }
 const monedas=[ 
-    {moneda:'euro', precio: '1178,44'},
-    {moneda:'dolar', precio: '1055,75'},
-    {moneda:'dolar blue', precio: '1340'},
-    {moneda:'real', precio: '183,75'},
-    {moneda:'ARS', precio: '1'},
+    {divisas:'euro', precio: '1178,44'},
+    {divisas:'dolar', precio: '1055,75'},
+    {divisas:'dolar blue', precio: '1340'},
+    {divisas:'real', precio: '183,75'},
+    {divisas:'ARS', precio: '1'},
 ]
 
 while(true){
     let monedaAConvertir = prompt('Ingrese a que moneda quiere convertir');
     
-    let monedaEncontrada = monedas.find((moneda) => moneda.moneda === monedaAConvertir);
+    let monedaEncontrada = monedas.find((moneda) => moneda.divisas === monedaAConvertir);
     if(monedaEncontrada != undefined){
         let cantidad= parseFloat(prompt('Ingrese la cantidad de pesos que quiere convertir a '+ monedaAConvertir))
         let conversion = resultado(cantidad, parseFloat(monedaEncontrada.precio));
